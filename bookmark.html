@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bookmark.css">
+    <script src="js/bookmark.js" defer></script>
+    <style>
+        @media only screen and (max-width: 46.1875em) {
+            
+            
+            .nav-bar{
+                 width: 100%;
+             }
+            .media , .search ,.function{
+                display: none;
+            }
+            .logo{
+                margin-left: 30px;
+                
+            }
+            .button{
+               width: 8.5%;
+           }
+           .profile-list{
+               width: 100%;
+           }
+           .app-section{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .app-section .card2{
+                width: 30%;
+            }
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar flex align">
+            <div class="humberger-menu "  style="flex-grow: 1.3;">
+                <div id="nav-container">
+                    <div class="bg"></div>
+                    <div class="button" tabindex="0">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </div>
+                    <div id="nav-content" tabindex="0">
+                      <ul>
+                        <li><a href="#0" class="text " style="color: #F5C518;"><span><i class="fa-solid fa-house-chimney"></i></span> Home</a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-solid fa-house-chimney"></i></span> <a href="category.html">The Loai</a></a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-regular fa-film"></i></span> Phim bo</a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-solid fa-house-chimney"></i></i></span> Phim le</a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-solid fa-house-chimney"></i></span> Dien vien</a></li>
+                        <ul class="dicovery"> Kham Pha
+                            <li><a href="#0" class="text" style="color: #F5C518;"><span><i class="fa-solid fa-house-chimney"></i></span> Home</a></li>
+                            <li><a href="#0" class="text" style="color: #F5C518;"><span><i class="fa-solid fa-house-chimney"></i></span> Home</a></li>
+                          </ul>
+                      </ul>
+                      
+                    </div>
+                  </div>
+            </div>
+    
+    
+            <div class="small-bar flex" style="flex-grow: 8;">
+                <div class="logo-search flex" style="flex-grow: 3;">
+                    <div class="logo" style="flex-grow: 5;"><img src="https://animebee.to/assets/animebee/images/logo.png" alt=""></div>
+                    <form action="/search" class="search flex" style="flex-grow: 7">
+                        <input type="text" class="box" placeholder="Nhap ten phim can tim....">
+                        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </form>
+                </div>
+                <div class="slogan-media " style="flex-grow: 5;">
+                    
+                    <div class="media flex" style="padding-left: 15px;padding-right: 50px;">
+                        <div class="icon-media" style="background-color: #6F85D5;"><i class="fab fa-facebook"></i></div>
+                        <div class="icon-media" style="background-color: #6F85D5;"><i class="fab fa-discord"> </i></div>
+                        <div class="icon-media" style="background-color: #0188CD;"><i class="fab fa-telegram-plane"></i></div>
+                        <div class="icon-media" style="background-color: #FF3C1F;"><i class="fab fa-reddit-alien"></i></i></div>
+    
+                    </div>
+                </div>
+                <div class="function flex" style="flex-grow: 9;">
+                    <div ><i class="fa-solid fa-shuffle random"></i><p class="small ">Random</p></div>
+                    <div ><i class="fa-solid fa-language language"></i><p class="small">Translate</p></div>
+                </div>
+    
+            </div>
+           
+            <div class="dropdown" id="user">
+                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-user" ></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="bookmark.html"><i class="fa-solid fa-user"></i> <span>&ensp;Profile</span></a></a>
+                  <a href="#about"><i class="fa-solid fa-heart"></i><span>&ensp; Watch list</span></a></a>
+                  <div href="#contact" style="text-align: right;cursor: pointer;" onclick="LogOut()">Log out <span>&ensp;<i class="fa-solid fa-right-from-bracket"></i></span></div>
+                </div>
+              </div>
+            <div class="login align"  id="login" style="flex-grow: 0.5;"><a href="login.html">Login</a></div>
+        </div>
+    </header>
+    </header>
+    <section class="body" style="margin-top:5em">
+        <div class="profile-header">
+            <img src="media/2.jpg" alt="">
+            <div class="username">
+                chipaupau
+            </div>
+            <ul class="tabs flex" style="justify-content: space-around;">
+                <li class="nav-link l"><a href="#"><span><i class="fa-solid fa-user"></i> Profile</span></a></li>
+                <li class="nav-link r"><a href="#"><span><i class="fa-solid fa-heart"></i> Bookmark List</span></a></li>
+            </ul>
+        </div>
+        <div class="profile-list">
+            <div class="profile_title flex" style="justify-content: space-between;">
+                <h2 class="text"><span><i class="fa-solid fa-heart">&nbsp;</i> Bookmark List</span></h2>
+                <button class="delete" onclick="deleteAll()">Xóa tất cả</button>
+            </div>
+            <div class="film-list">
+                <div class="content-left "  >
+                    <div class="new-film" >
+                       
+                        <div id="bookmark" class="app-section flex" style="justify-content: center">
+                          
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/checkuser.js"></script>
+    <script>
+        var list = JSON.parse(localStorage.getItem('bookmark')) || [];
+        function LoadData() {
+            var infor = "";
+            for (x of list) {
+                infor += 
+                            `<div class="card2 ">
+                                <div class="list-media-attr ">
+                                    <img src="`+ x.image + `">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                        <i class="fa-solid fa-circle-xmark exit" onclick="deleteItem(`+x.id+`)"></i>
+
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">`+ x.name+`</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            `;
+            }
+            $('#bookmark').html(infor);
+    
+        } 
+        LoadData()          
+    </script>
+</body>
+</html>

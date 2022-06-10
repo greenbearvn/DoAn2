@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: #EDEDED;
+    color: #323232;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+ul li{
+    list-style: none;
+}
+.align{
+    display: flex;
+    justify-content: center;
+}
+.align-y{
+    display: flex;
+    align-items: center;
+}
+.manage{
+    margin-top: 30px;
+    height: 56%;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000;
+    margin-bottom: 20px;
+}
+/*******************/
+.header{
+    background-color: #FFFEFE;
+}
+
+/*************navbar**********************/
+.header .logo{
+    width: 17%;
+    background-color: #414248;
+    padding: 10px;
+}
+
+.header .logo img{
+    width: 80%;
+}
+.function{
+    width: 100%;
+}
+.function .item_dropdown{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.function .item_dropdown .items-manage{
+    position: relative;
+}
+.function .item_dropdown .items-manage i{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 50px 0px 10px;
+}
+
+.function .item_dropdown .items-manage .bagde{
+    position: absolute;
+    top: 10px;
+    right: 37px;
+    background-color:red ;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #FFFEFE;
+}
+.humberger-menu .button i{
+    font-size: 26px;
+    margin: 20px;
+}
+/***************nav-content********************/
+#tab{
+    background-color: #3E3E3E;
+}
+.tab .tablinks {
+    border: none;
+    font-size: 16px;
+    color: #8c8c8c;
+    padding: 25px;
+    background-color: #3E3E3E;
+    border-bottom: 1px solid #525252;
+    text-align: left;
+}
+.tab .tablinks:focus-within{
+    background-color: #EDEDED;
+    color: #F26C5A;
+}
+/****************************/
+.content-right{
+    margin: 20px;
+}
+
+
+
+.panel-list{
+    margin-top: 30px;
+}
+.panel-list .pannel-item{
+    width: 22.5%;
+    padding: 20px 15px 20px 15px;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+.panel-list .pannel-item .pannel-left{
+    margin: 15px;
+    
+}
+
+.panel-list .pannel-item .pannel-left .text{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 35px;
+    color: #676767;
+}
+.panel-list .pannel-item .pannel-left small{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #aab5bc;
+}
+.panel-list .pannel-item .pannel-right{
+    display: flex;
+    align-items: center;
+    background-color: rebeccapurple;
+    padding: 25px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+/******************breadcúm******************/
+
+
+.content-right .title-x .title-page{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.content-right .title-x .hello-user{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+.breadcum{
+    background-color: #FFFEFE;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+
+/*****************progress**************************/
+.progress-bar{
+    background-color: #FFFEFE;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.progress-item{
+    margin-top: 25px;
+}
+.progress-item .progress .bg{
+    width: 500px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: rgb(222, 210, 210);
+    
+}
+.progress-item .progress{
+    position: relative;
+}
+.progress-item .progress .run{
+    background-color: #5DB85D;
+    width: 400px;
+    height: 35px;
+    margin-left: 10px;
+    position: absolute;
+    border-radius: 10px;
+}
+.progress-item *{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.progress-item i{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 18px;
+}
+
+/**************task*****************/
+
+.task-bar{
+    background-color: #FFFEFE;
+    color: #121315;  
+    padding: 10px;
+}
+
+.task-list {
+    border: 1px black solid;
+    margin: 10px;
+    border-radius: 10px;
+}
+.task-list .task-item{
+    border-top: 1px black solid;
+    padding: 10px;
+}
+.task-list .task-item i{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 14px;
+}
+
+.task-list .task-item .text2{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 5px;
+}
+
+.task-list .task-item .time{
+    margin-left: 25%;
+    background-color:#F36B5B;
+    color: #FFFEFE;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/**********Quan li**********************/
+
+
+.func{
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fefefe;
+}
+.func .search{
+    position: relative;
+}
+.func .search input{
+    width: 300px;
+    height: 40px;
+    border: 2px solid #327AB6;
+
+}
+.func .search button{
+    background-color: #327AB6;
+    color: #fefefe;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+}
+.func .add{
+    background-color: #327AB6;
+    color: #fefefe;
+    padding: 10px;
+    cursor: pointer;
+}
+.sort{
+    padding: 10px;
+    background-color: #FFFEFE;
+    margin-top: 20px;
+}
+.sort > form> select{
+    width: 200px;
+    height: 30px;
+}
+.sort > form > input{
+    background-color: #327AB6;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    color: #fefefe;
+}
+.table_data{
+    background-color: #FFFEFE;
+    margin-top: 20px;
+    flex: 4;
+    width: 70%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 16px;
+  }
+  
+  th:first-child, td:first-child {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2
+  }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: left;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-content input, textarea,label{
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+  }
+.modal-content input{
+    height: 35px;
+    border: 2px #CCCCCC solid;
+    border-radius: 5px;
+}
+.modal-content label{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    }
+.modal-content input:focus{
+    border-color: #70B2E6;
+}
+
+
+.modal-content .function{
+    justify-content: right;
+}
+
+.modal-content .function button{
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.form_film{
+    margin: 20px 10px 0px 0px;
+    padding: 10px;
+    background-color: #FFFEFE;
+    width: 30%;
+}
+
+.form_film input{
+    width: 350px;
+    height: 35px;
+    border: 2px solid #327AB6;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+}
+.form_film textarea{
+    height: 100px;
+    border: 2px solid #327AB6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding:5px;
+    width: 350px;   
+}
+.form_film select{
+    width: 350px;
+    height: 42px;
+    border: 2px solid #327AB6;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px;  
+}
+.form_film .function{
+    justify-content: right;
+}
+.form_film .function button{
+    padding: 10px;
+    border-radius:5px;
+    margin: 10px;
+    border: none;
+    background-color: #F36B5B;
+    color: #FFFEFE;
+}
+
+button{
+    cursor: pointer;
+}
+.imgUpload{
+    background-color: coral;
+    width: 35%;
+    padding: 5px;
+    color: #FFFEFE;
+    cursor: pointer;
+}
+.imgUpload *{
+    margin: 5px;
+}

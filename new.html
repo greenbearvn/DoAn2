@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="header flex">
+            <div class="logo"><img src="https://animebee.to/assets/animebee/images/logo.png" alt=""></div>
+            <div class="function flex" style="justify-content: space-around;">
+                <div class="humberger-menu">
+                    <div class="button" tabindex="0">
+                        <span class="icon-bar">a</span>
+                        <span class="icon-bar">a</span>
+                        <span class="icon-bar">a</span>
+                      </div>
+                </div>
+                <div class="item_dropdown flex">
+                    <div class="items-manage">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="bagde">1</div>
+                    </div>
+                    <div class="items-manage">
+                        <i class="fa-solid fa-bars-progress"></i>
+                        <div class="bagde">2</div>
+                    </div>
+                    <div class="items-manage">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="bagde">3</div>
+                    </div>
+                    <div class="items-manage">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="bagde">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="page flex" style="height: 680px;">
+        <div class="content-left" >
+            <div class="tab" style="display: flex;flex-direction: column;">
+                <button class="tablinks" onclick="openCity(event, 'Dashboard')" id="defaultOpen"><i class="fa-solid fa-chart-line"></i><span>&ensp;Dashboard</span></button>
+                <button class="tablinks" onclick="openCity(event, 'id')"><i class="fa-solid fa-film"></i><span>&ensp;Film</span></button>
+                <button class="tablinks" onclick="openCity(event, 'comment')"><i class="fa-solid fa-comments"></i><span>&ensp;Comment</span></button>
+                <button class="tablinks" onclick="openCity(event, 'user')"><i class="fa-solid fa-users"></i><span>&ensp;Users</span></button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="fa-solid fa-tags"></i><span>&ensp;Category</span></button>
+              </div>
+        </div>
+        <div class="content-right" style="flex-grow: 4;" >
+            <div id="Dashboard" class="tabcontent">
+                <div class="title-x flex">
+                    <h1 class="title-page">Dashboard</h1>
+                    <div class="hello-user">Welcome ......</div>
+                </div>
+                <div class="breadcum">
+                    <span><a href="#" style="color: #23527c;">Home</a>   /   </span> <span><a href="#" style="color: #23527c;">Dashboad</a></span> / <span> <a href="#" style="color: grey;">Data</a></span>
+                </div>
+                <div class="panel-list flex" style="flex-wrap: wrap;justify-content: space-between;">
+                    <div class="pannel-item flex" >
+                        <div class="pannel-left">
+                            <h3 class="text">44,023</h3>
+                            <small>DAILY VISITS</small>
+                        </div>
+                        <div class="pannel-right" style="background: #F36B5B;">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="pannel-item flex">
+                        <div class="pannel-left">
+                            <h3 class="text">44,023</h3>
+                            <small>DAILY VISITS</small>
+                        </div>
+                        <div class="pannel-right" style="background: #30A5FF;">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="pannel-item flex">
+                        <div class="pannel-left">
+                            <h3 class="text">44,023</h3>
+                            <small>DAILY VISITS</small>
+                        </div>
+                        <div class="pannel-right" style="background: #1BBC9D;">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="pannel-item flex">
+                        <div class="pannel-left">
+                            <h3 class="text">44,023</h3>
+                            <small>DAILY VISITS</small>
+                        </div>
+                        <div class="pannel-right" style="background: #FBBE29;">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="manage flex">
+                    <div class="progress-bar" style="flex-grow: 1;">
+                        <h4 class="title">Task Panel</h4>
+                        <div class="progress-item flex">
+                            <i class="fa-solid fa-microchip"></i>
+                            <div class="progress">
+                                <div class="bg"></div>
+                                <div class="run"></div>
+                            </div>
+                            <div class="text1">84%</div>
+                        </div>
+                        <div class="progress-item flex">
+                            <i class="fa-solid fa-memory"></i>
+                            <div class="progress">
+                                <div class="bg"></div>
+                                <div class="run"></div>
+                            </div>
+                            <div class="text1">84%</div>
+                        </div>
+                        <div class="progress-item flex">
+                            <i class="fa-solid fa-memory"></i>
+                            <div class="progress">
+                                <div class="bg"></div>
+                                <div class="run"></div>
+                            </div>
+                            <div class="text1">84%</div>
+                        </div>
+                        <div class="progress-item flex">
+                            <i class="fa-solid fa-memory"></i>
+                            <div class="progress">
+                                <div class="bg"></div>
+                                <div class="run"></div>
+                            </div>
+                            <div class="text1">84%</div>
+                        </div>
+                    </div>
+                    <div class="task-bar" style="flex-grow: 3;">
+                        <h4 class="title">Task Panel</h4>
+                        <ul class="task-list">
+                            <li class="task-item flex" style="border: none;">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                            <li class="task-item flex">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                            <li class="task-item flex">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                            <li class="task-item flex">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                            <li class="task-item flex">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                            <li class="task-item flex">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                        </ul>
+        
+                    </div>
+                </div>
+            </div>
+            
+            <div id="id" class="tabcontent" style="flex-grow: 7;">
+                <div class="func flex">
+                    <div class="search">
+                        <input type="text" name="" id="">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="add align-y">
+                        <div class="btn_add ">
+                            <div id="myBtn"><i class="fa-solid fa-pen-to-square"></i></div>
+
+                                <div id="myModal" class="modal">
+                            
+                                                    
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                            <label for="">Ma phim</label>
+                                            <input type="text" name="" id="film-id">
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="name">
+                                            
+                                            <label for="">Anh phim</label>
+                                            <input type="file" name="" id="picture">
+                                            <label for="">Mo ta</label>
+                                            <textarea name="" id="decription" cols="30" rows="10"></textarea>
+                                            <label for="">the loai phim</label>
+                                            <input type="text" name="" id="category">
+                                            <label for="">dien vien</label>
+                                            <input type="text" name="" id="actress">
+                                            <label for="">Nam san xuat</label>
+                                            <input type="text" name="" id="year">
+                                            <div class="function flex">
+                                                <button type="submit" onclick="Add(items())">Submit</button>
+                                                <button type="submit">Cencal</button>
+                                            </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sort">
+                    <form action="">
+                        <label for="cars">Action:</label>
+                        <select name="" id="">
+                          <option value="A-Z">A-Z</option>
+                          <option value="Z-A">Z-A</option>
+                        </select>
+                       
+                        <input type="submit" value="Go">
+                      </form>
+
+                      <button onclick="XoaCart() ">xxx</button>
+                </div>
+                <div class="table_data">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th >Mã Phim</th>
+                                <th>Tên Phim</th>
+                                <th>ẢNh Phim</th>
+                                <th >Thể Loại</th>
+                                <th>Diễn Viên</th>
+                                <th>Năm Sản Xuất</th>
+                                
+                              </tr>
+                        </thead>
+                        <tbody id="render_data">
+                          
+                        </tbody>
+                        
+                        </div>
+                      </table>
+                </div>
+                
+            </div>
+            <div id="comment" class="tabcontent" style="flex-grow: 7;">
+                <div class="func flex">
+                    <div class="search">
+                        <input type="text" name="" id="">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="add align-y">
+                        <div class="btn_add ">
+                            <!-- <div id="myBtn"><i class="fa-solid fa-pen-to-square"></i></div>
+
+                                <div id="myModal" class="modal">
+                            
+                                                    
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            
+                                            <label for="">Anh phim</label>
+                                            <input type="file" name="" id="">
+                                            <label for="">Anh phim</label>
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            
+                                    </div>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="sort">
+                    <form action="">
+                        <label for="cars">Action:</label>
+                        <select name="" id="">
+                          <option value="A-Z">A-Z</option>
+                          <option value="Z-A">Z-A</option>
+                        </select>
+                       
+                        <input type="submit" value="Go">
+                      </form>
+                </div>
+                <div class="table_data">
+                    <table>
+                        <tr>
+                          <th >Mã Phim</th>
+                          <th>Tên Phim</th>
+                          <th>ẢNh Phim</th>
+                          <th >Thể Loại</th>
+                          <th>Diễn Viên</th>
+                          <th>Năm Sản Xuất</th>
+                          
+                        </tr>
+                        <tr id="data_render">
+                          
+                        </tr>
+
+                        </div>
+                      </table>
+                </div>
+                
+            </div>
+            <div id="user" class="tabcontent" style="flex-grow: 7;">
+                <div class="func flex">
+                    <div class="search">
+                        <input type="text" name="" id="">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="add align-y">
+                        <div class="btn_add ">
+                            <!-- <div id="myBtn"><i class="fa-solid fa-pen-to-square"></i></div>
+
+                                <div id="myModal" class="modal">
+                            
+                                                    
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            
+                                            <label for="">Anh phim</label>
+                                            <input type="file" name="" id="">
+                                            <label for="">Anh phim</label>
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            
+                                    </div>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="sort">
+                    <form action="">
+                        <label for="cars">Action:</label>
+                        <select name="" id="">
+                          <option value="A-Z">A-Z</option>
+                          <option value="Z-A">Z-A</option>
+                        </select>
+                       
+                        <input type="submit" value="Go">
+                      </form>
+                </div>
+                <div class="table_data">
+                    <table>
+                        <tr>
+                          <th >Mã Phim</th>
+                          <th>Tên Phim</th>
+                          <th>ẢNh Phim</th>
+                          <th >Thể Loại</th>
+                          <th>Diễn Viên</th>
+                          <th>Năm Sản Xuất</th>
+                          
+                        </tr>
+                        <tr>
+                          <td >1</td>
+                          <td>Naruto Shipudent</td>
+                          <td style="width:10%"><img src="media/cheems.jpg" alt="" srcset="" width="100%"></td>
+                          <td>Naruto Shipudent,
+                              
+                          </td>
+                          <td>Sample text</td>
+                          <td>Sample text</td>
+                          <td >
+                              <div id="myBtn"><i class="fa-solid fa-pen-to-square"></i></div>
+
+                            <!-- The Modal -->
+                                <div id="myModal" class="modal">
+                            
+                                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            
+                                            <label for="">Anh phim</label>
+                                            <input type="file" name="" id="">
+                                            <label for="">Anh phim</label>
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            <label for="">ten phim</label>
+                                            <input type="text" name="" id="">
+                                            <div class="function flex">
+                                                <button type="submit">Submit</button>
+                                                <button type="submit">Cencal</button>
+                                            </div>
+                                    </div>
+                                </div>
+                            </td>
+                          <td><i class="fa fa-remove"></i></td>
+                          
+                        </tr>
+                        <tr>
+                            <td >1</td>
+                            <td>Naruto Shipudent</td>
+                            <td style="width:10%"><img src="media/cheems.jpg" alt="" srcset="" width="100%"></td>
+                            <td>Naruto Shipudent,
+                                
+                            </td>
+                            <td>Sample text</td>
+                            <td>Sample text</td>
+                            <td >
+                                <div id="myBtn"><i class="fa-solid fa-pen-to-square"></i></div>
+  
+                              <!-- The Modal -->
+                                  <div id="myModal" class="modal">
+                              
+                                                      <!-- Modal content -->
+                                      <div class="modal-content">
+                                          <span class="close">&times;</span>
+                                              <label for="">ten phim</label>
+                                              <input type="text" name="" id="">
+                                              
+                                              <label for="">Anh phim</label>
+                                              <input type="file" name="" id="" style="border: none">
+                                              <label for="">Anh phim</label>
+                                              <textarea name="" id="" cols="30" rows="10"></textarea>
+                                              <label for="">ten phim</label>
+                                              <input type="text" name="" id="">
+                                              <label for="">ten phim</label>
+                                              <input type="text" name="" id="">
+                                              <label for="">ten phim</label>
+                                              <input type="text" name="" id="">
+                                              
+                                      </div>
+                                  </div>
+                              </td>
+                            <td><i class="fa fa-remove"></i></td>
+                            
+                          </tr>
+                        
+
+                        </div>
+                      </table>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </section>
+    <script>
+        
+
+        ///////////////////
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        
+        
+        
+        var data = JSON.parse(localStorage.getItem('films')) || [];
+        
+
+
+            //////////////////
+         function LoadData() {
+            var infor = "";
+            for (x of data) {
+                infor += 
+                            `
+                            <tr>
+                                <td >`+x.id+`</td>
+                                <td>`+x.names+`</td>
+                                <td style="width:10%"><img src="`+x.pic+`" alt="" srcset="" width="100%"></td>
+                                <td>`+x.category+`</td>
+                                <td>`+x.actress+`</td>
+                                <td>`+x.year+`</td>
+                                <td >
+                                    <div id="show" ><i class="fa-solid fa-pen-to-square"></i></div>
+
+                                    <!-- The Modal -->
+                                        <div id="itemModal" class="modal">
+                                    
+                                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                                <span class="close">&times;</span>
+                                                    <label for="">ten phim</label>
+                                                    <input type="text" name="" id="udtname" value="`+x.names+`" >
+                                                    
+                                                    <label for="">Anh phim</label>
+                                                    <input type="file" name="" id="" value="`+x.category+`">
+                                                    <label for="">Mo ta phim</label>
+                                                    <textarea name="" id="udtdes"  cols="30" rows="10">`+x.decr+`</textarea>
+                                                    <label for="">the loai phim</label>
+                                                    <input type="text" name="" id="udtcat" value="`+x.category+`" >
+                                                    <label for="">dien vien phim phim</label>
+                                                    <input type="text" name="" id="udtcas" value="`+x.actress+`" >
+                                                    <label for="">nam san xuat phim</label>
+                                                    <input type="text" name="" id="udtyear" value="`+x.year+`" >
+                                                    <div class="function flex">
+                                                        <button type="submit" onclick="update(`+x.id+`)">Submit</button>
+                                                        <button type="submit">Cencal</button>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                <td><i onclick="Xoa(`+ x.id  + `)" class="fa fa-remove" ></i></td>
+                          
+                            </tr>
+                            `;
+            }
+            $('#render_data').html(infor);
+    
+        } 
+        LoadData()  
+
+
+
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+
+        var modal_item = document.getElementById("itemModal");
+
+        // Get the button that opens the modal
+        var show = document.getElementById("show");
+        show.onclick = function() {
+            modal_item.style.display = "block";
+        }
+        }   
+    </script>
+    <script src="js/add-new.js"></script>
+</body>
+</html>

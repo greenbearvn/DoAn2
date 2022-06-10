@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/scripts.js" defer></script>
+    <style>
+        
+        /*tablet****/
+        @media only screen and (min-width: 46.25em) and (max-width: 77.9375em) {
+        
+        
+        .nav-bar{
+            background-color: #5B68B3;
+        }
+        .nav-bar .media{
+         display: none;  
+        }
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card .item{
+            width: 45%;
+        }
+        .humberger-menu{
+            display: block;
+            
+        }
+        .button{
+            width: 5%;  
+        }
+        .function{
+            display: flex;
+            justify-content: center;
+           
+        }
+        .body .list-rank{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+        }
+        .body .list-rank .list-small{
+            width: 45%;
+
+        }
+        .content{
+            display: block;
+        }
+        .app-section{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .app-section .card2{
+            width: 22%;
+            margin: 5px;
+        }
+        .app-section .card2 .list-media-attr img{
+            width: 100%;
+        }
+        .content .content-left{
+           
+            margin-left: 10px;
+        }
+
+        .content .content-right{
+            width: 100%;
+            margin-left: 40px;
+        }
+        .most-view{
+            width: 88%;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+        
+        
+
+}
+
+
+        @media only screen and (max-width: 500px){
+        /*may tinh bang*/
+        .media{
+            display: none;
+        }
+        .trend-list, .app-section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .trend-items, .card2{
+            width: 50%;
+        }
+        .box{
+            display: none;
+        }
+        .category-mostview{
+            display: inline-block;
+        }
+        .most-view{
+            width: 100%;
+        }
+        .category{
+            width: 100%;
+        }
+
+        .button{
+            width: 6.5%;
+        }
+        .item{
+            height: 50%;
+        }
+        .list-rank{
+            display: inline-block;
+        }
+        }   
+
+
+        /*dien thoai di dong*/
+        @media only screen and (max-width: 46.1875em) {
+        
+
+     
+        .trend-list, .app-section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .trend-items, .card2{
+            width: 40%;
+            margin: 10px;
+            margin-left: 10px;
+        }
+        .box{
+            display: none;
+        }
+        .category-mostview{
+            display: inline-block;
+        }
+        
+        
+        .button{
+            width: 8%;
+            
+        }
+        .logo{
+            padding-left:30px;
+        }
+        .app-section .card2 img{
+           
+           width:100%;
+        }
+        .content{
+            display: inline-block;
+            width: 100%;
+        }
+        .trend-items{
+            margin: 5px;
+            width: 45%;
+        }
+        .random{
+            width: 30%;
+        }
+        .abc{
+            width: 5%;
+        }
+
+        .list-media-attr .play-btn{
+            width: 100%;
+        }
+        
+        .function{
+            display: none;
+        }
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item{
+            width: 45%;
+        }
+        .footer{
+            margin: 0px;
+        }
+        .card2 .list-media-attr img{
+            height: 60%;
+        }
+        .nav-bar .humberger-menu{
+            display: block;
+        }
+        .navber{
+            display: none;
+        }
+        .carousel .slideshow-container .mySlides img{
+            width: 100%;
+            height: 200px;
+        }
+        .nav-bar{
+            margin: 0;
+        }
+        .category{
+    
+            display: flex;
+            justify-content: left;
+        
+        }
+        .carousel > .slideshow-container .text1{
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .prev, .next{
+            top: 50%;
+            width: 30px;
+        }
+        .content .content-right{
+            width: 120%;
+            display: flex;
+            justify-content: center;
+           
+        }
+        .category-mostview{
+            width: 80%;
+        }
+        
+        .film-stats ,.text8{
+            display: none;
+        }
+        .next, .prev{
+            width: 10px;
+            height: 40px;
+            padding-top: 5px  ;
+        }
+        }   
+        
+        
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="nav-bar flex align">
+            <div class="humberger-menu "  style="flex-grow: 1.3;">
+                <div id="nav-container">
+                    <div class="bg"></div>
+                    <div class="button" tabindex="0">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </div>
+                    <div id="nav-content" tabindex="0">
+                      <ul>
+                        <li><a href="#0" class="text " style="color: #F5C518;"><span><i class="fa-solid fa-house-chimney"></i></span> Home</a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-solid fa-house-chimney"></i></span> <a href="category.html">The Loai</a></a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-regular fa-film"></i></span> Phim bo</a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-solid fa-house-chimney"></i></i></span> Phim le</a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-solid fa-house-chimney"></i></span> Dien vien</a></li>
+                        <ul class="dicovery"> Kham Pha
+                            <li><a href="#0" class="text" style="color: #F5C518;"><span><i class="fa-solid fa-house-chimney"></i></span> Home</a></li>
+                            <li><a href="#0" class="text" style="color: #F5C518;"><span><i class="fa-solid fa-house-chimney"></i></span> Home</a></li>
+                          </ul>
+                      </ul>
+                      
+                    </div>
+                  </div>
+            </div>
+    
+    
+            <div class="small-bar flex" style="flex-grow: 8;">
+                <div class="logo-search flex" style="flex-grow: 3;">
+                    <div class="logo" style="flex-grow: 5;"><img src="https://animebee.to/assets/animebee/images/logo.png" alt=""></div>
+                    <form action="/search" class="search flex" style="flex-grow: 7">
+                        <input type="text" class="box" placeholder="Nhap ten phim can tim....">
+                        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </form>
+                </div>
+                <div class="slogan-media " style="flex-grow: 5;">
+                    
+                    <div class="media flex" style="padding-left: 15px;padding-right: 50px;">
+                        <div class="icon-media" style="background-color: #6F85D5;"><i class="fab fa-facebook"></i></div>
+                        <div class="icon-media" style="background-color: #6F85D5;"><i class="fab fa-discord"> </i></div>
+                        <div class="icon-media" style="background-color: #0188CD;"><i class="fab fa-telegram-plane"></i></div>
+                        <div class="icon-media" style="background-color: #FF3C1F;"><i class="fab fa-reddit-alien"></i></i></div>
+    
+                    </div>
+                </div>
+                <div class="function flex" style="flex-grow: 9;">
+                    <div ><i class="fa-solid fa-shuffle random"></i><p class="small ">Random</p></div>
+                    <div ><i class="fa-solid fa-language language"></i><p class="small">Translate</p></div>
+                </div>
+    
+            </div>
+           
+            <div class="dropdown" id="user">
+                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-user" ></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="bookmark.html"><i class="fa-solid fa-user"></i> <span>&ensp;Profile</span></a></a>
+                  <a href="#about"><i class="fa-solid fa-heart"></i><span>&ensp; Watch list</span></a></a>
+                  <div href="#contact" style="text-align: right;cursor: pointer;" onclick="LogOut()">Log out <span>&ensp;<i class="fa-solid fa-right-from-bracket"></i></span></div>
+                </div>
+              </div>
+            <div class="login align"  id="login" style="flex-grow: 0.5;"><a href="login.html">Login</a></div>
+        </div>
+        <div class="carousel "  >
+            <div class="slideshow-container">
+    
+                <div class="mySlides fade" >
+                  <img src="https://static.bunnycdn.ru/i/cache/images/d/dd/dd513b18feb0cd0aa5806d1a99b0141c.jpg" style="width:100%;">
+                  <div class="text1">I’m Quitting Heroing
+                    
+                  </div>
+                  <div class="film-stats flex" >
+                    <div class="tag flex">
+                        <h6 style="background-color: #D08903;">HD</h6>
+                        <h6 style="background-color: #FEFFFE;">DUB</h6>
+                    </div>
+                    <div class="text9" style="padding: 5px;"><span><a href="#"><span><i class="fa-regular fa-circle-play"></i> TV Seri</span></a></span> >
+                        <span><a href="#"><span><i class="fa-solid fa-clock"></i> 24 min/ep</span></a></span> >
+                        <span><a href="#"><span><i class="fa-solid fa-calendar"></i> 2022-04-09</span></a></span>
+                    </div>
+
+                    </div>
+                    <div class="text8">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt repellendus praesentium quae? Perferendis qui architecto, dolor ea nihil in. Adipisci.
+                    </div>
+
+                </div>
+                
+                <div class="mySlides fade" >
+                  <img src="https://static.bunnycdn.ru/i/cache/images/7/7e/7e6e0690fcd2f38d99df14be108699e0.jpg" style="width:100%;">
+                  <div class="text1">I’m Quitting Heroing
+
+                  </div>
+                  <div class="film-stats flex" >
+                    <div class="tag flex">
+                        <h6 style="background-color: #D08903;">HD</h6>
+                        <h6 style="background-color: #FEFFFE;">DUB</h6>
+                    </div>
+                    <div class="text9" style="padding: 5px;"><span><a href="#"><span><i class="fa-regular fa-circle-play"></i> TV Seri</span></a></span> >
+                        <span><a href="#"><span><i class="fa-solid fa-clock"></i> 24 min/ep</span></a></span> >
+                        <span><a href="#"><span><i class="fa-solid fa-calendar"></i> 2022-04-09</span></a></span>
+                    </div>
+
+                    </div>
+                    
+                </div>
+                
+                <div class="mySlides fade" >
+                  <img src="https://static.bunnycdn.ru/i/cache/images/b/bd/bdc87ac08fc232af5cb09cc927ad0a5a.jpg" style="width:100%;">
+                  <div class="text1" >Pocket Monsters: The <br> Hallowed God, Arceus</div>
+                  <div class="film-stats flex" >
+                    <div class="tag flex">
+                        <h6 style="background-color: #D08903;">HD</h6>
+                        <h6 style="background-color: #FEFFFE;">DUB</h6>
+                    </div>
+                    <div class="text9" style="padding: 5px;"><span><a href="#"><span><i class="fa-regular fa-circle-play"></i> TV Seri</span></a></span> >
+                        <span><a href="#"><span><i class="fa-solid fa-clock"></i> 24 min/ep</span></a></span> >
+                        <span><a href="#"><span><i class="fa-solid fa-calendar"></i> 2022-04-09</span></a></span>
+                    </div>
+
+                  </div>
+                    <div class="text8">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt repellendus praesentium quae? Perferendis qui architecto, dolor ea nihil in. Adipisci.
+                    </div>
+                    
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div class="dotto" style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+        </div>
+       
+        
+    
+        <div class="trending" >
+            <div class="title">Trending</div>
+            <div class="trend-list flex">
+                <div class="trend-items" >
+                    <div class="trend-title flex">
+                        <div class="number-rank" style="flex-grow: 2;">1</div>
+                        <div class="trend-name " style="flex-grow: 2;">Naruto Shipudent</div>
+                    </div>
+                    <div class="trend-img">
+                        <a href="detail.html"><img src="https://static.bunnycdn.ru/i/cache/images/2018/04/2df17050390f1835b07d0a9c0f88a897.jpg" alt="" width="80%"></a>
+                        
+                    </div>
+                </div>
+                <div class="trend-items" >
+                    <div class="trend-title flex">
+                        <div class="number-rank" style="flex-grow: 2;">2</div>
+                        <div class="trend-name " style="flex-grow: 2;">Naruto Shipudent</div>
+                    </div>
+                    <div class="trend-img">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="80%">
+                    </div>
+                </div>
+                <div class="trend-items" >
+                    <div class="trend-title flex">
+                        <div class="number-rank" style="flex-grow: 2;">3</div>
+                        <div class="trend-name " style="flex-grow: 2;">Naruto Shipudent</div>
+                    </div>
+                    <div class="trend-img">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/2018/04/f14e685db515746ac19a016180bb384c.jpg" alt="" width="80%">
+                    </div>
+                </div>
+                <div class="trend-items" >
+                    <div class="trend-title flex">
+                        <div class="number-rank" style="flex-grow: 2;">4</div>
+                        <div class="trend-name " style="flex-grow: 2;">Naruto Shipudent</div>
+                    </div>
+                    <div class="trend-img">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/2018/04/ede641090c1bcfaa10be65f73c805e9c.jpg" alt="" width="80%">
+                    </div>
+                </div>
+                <div class="trend-items" >
+                    <div class="trend-title flex">
+                        <div class="number-rank" style="flex-grow: 2;">5</div>
+                        <div class="trend-name " style="flex-grow: 2;">Naruto Shipudent</div>
+                    </div>
+                    <div class="trend-img">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/2018/04/ef7eece108cfbe794eb505dc983f7fe4.jpg" alt="" width="80%">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="collection">
+            <div class="flex" style="justify-content: space-between;">
+                <h3 class="title">
+                    Bộ sưu tập
+                </h3>
+                <p class="text2">
+                    Tất cả
+                </p>
+            </div>
+            <div class="card">
+                <div class="item" style="background-color: rgb(84, 120, 86);"> 
+                    <p class="text">Trọn bộ Bóng Ma Anh Quốc - Peaky Blinders</p>
+                    <small class="small ">6 phim</small>
+                </div>
+                <div class="item" style="background-color: #439B9B;"> 
+                    <p class="text ">Trọn bộ Bóng Ma Anh Quốc - Peaky Blinders</p>
+                    <small class="small ">6 phim</small>
+                </div>
+                <div class="item" style="background-color: #33A68B;"> 
+                    <p class="text ">Trọn bộ Bóng Ma Anh Quốc - Peaky Blinders</p>
+                    <small class="small ">6 phim</small>
+                </div>
+            
+            
+                <div class="item" style="background-color: #5B68B3;"> 
+                    <p class="text">Trọn bộ Bóng Ma Anh Quốc - Peaky Blinders</p>
+                    <small class="small ">6 phim</small>
+                </div>
+                <div class="item" style="background-color: #D2875D;"> 
+                    <p class="text ">Trọn bộ Bóng Ma Anh Quốc - Peaky Blinders</p>
+                    <small class="small ">6 phim</small>
+                </div>
+                <div class="item" style="background-color: #998E8E;"> 
+                    <p class="text ">Trọn bộ Bóng Ma Anh Quốc - Peaky Blinders</p>
+                    <small class="small ">6 phim</small>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="body" style="background-color: #212025;">
+            <div class="list-rank flex " >
+                <div class="list-small">
+                    <h3 style="background-color:#4A4B51">Top Airing</h3>
+                    <div class="rank-item flex" style="justify-content: space-between;background-color: #414248;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="20%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;background-color: #414248;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="more " >
+                        <h3 class="text flex"style="justify-content:center;padding:20px">View more <span>&nbsp;<i class="fa-solid fa-chevron-right"></i></span></h3>
+                    </div>
+                </div>
+                <div class="list-small">
+                    <h3 style="background-color:#4A4B51">Top Airing</h3>
+                    <div class="rank-item flex" style="justify-content: space-between;background-color: #414248;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="20%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;background-color: #414248;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="more " >
+                        <h3 class="text flex"style="justify-content:center;padding:20px">View more <span>&nbsp;<i class="fa-solid fa-chevron-right"></i></span></h3>
+                    </div>
+                </div>
+                <div class="list-small">
+                    <h3 style="background-color:#4A4B51">Top Airing</h3>
+                    <div class="rank-item flex" style="justify-content: space-between;background-color: #414248;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="20%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;background-color: #414248;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="more " >
+                        <h3 class="text flex"style="justify-content:center;padding:20px">View more <span>&nbsp; <i class="fa-solid fa-chevron-right"></i></span></h3>
+                    </div>
+                </div>
+                <div class="list-small">
+                    <h3 style="background-color:#4A4B51">Top Airing</h3>
+                    <div class="rank-item flex" style="justify-content: space-between;background-color: #414248;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="20%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;background-color: #414248;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="rank-item flex" style="justify-content: space-between;">
+                        <img src="https://static.bunnycdn.ru/i/cache/images/5/5c/5c3f70c8283541a8bb6acd9b2746f11d.jpg" alt="" width="16%">
+                        
+                        <div class="info" style="padding-top: 10px;">
+                            <div class="name-film" >
+                                One PIece</div>
+                            <span class="small">TV<span>*</span>EP 1013/9999 * 24min/ep </span>
+                        </div>
+                        <i class="fa-solid fa-plus " style="padding-top: 10%;"></i>
+                    </div>
+                    <div class="more " >
+                        <h3 class="text flex"style="justify-content:center;padding:20px">View more <span>&nbsp;<i class="fa-solid fa-chevron-right"></i></span></h3>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="content flex">
+                <div class="content-left "  style="width: 94%;">
+                    <div class="new-film" >
+                        <div class="flex" style="justify-content: space-between;">
+                            <h3 class="title">
+                                Phim mới cập nhật
+                            </h3>
+                            <p class="text2">
+                                Tất cả
+                            </p>
+                        </div>
+                        <br>
+                        <div class="app-section flex" >
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/d/dc/dc152ceb5ba1474be4a4310cc59f90cb.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/e/e4/e41a915c3f2b1114ec093e7fc3b1442a.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/2018/04/2545c672bbc6791a7bfcf3fb8e8ed8f1.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/2018/04/39839535aa5d082fc53673b4d3abc667.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/2018/06/f1f56b50ed0c8394f00d20a571784199.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+        
+                    <br>
+                    <div class="new-film" >
+                        <div class="flex" style="justify-content: space-between;">
+                            <h3 class="title">
+                                Phim hot
+                            </h3>
+                            <p class="text2">
+                                Tất cả
+                            </p>
+                        </div>
+                        <br>
+                        <div class="app-section flex" >
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="list-media-attr ">
+                                    <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                    <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                    <div class="tag flex">
+                                        <div class="hd">HD</div>
+                                        <div class="ep ">EP 12/12</div>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <div class="name-film">The King of Ten Thousand Domain</div>
+                                    <small >ONA . 12min/ep . 2022</small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+        
+                    
+                    
+                </div>
+                <div class="content-right" style="display:inline-block;">
+                    <h3 class="title">
+                        Year
+                    </h3>
+                    <div   div class="category year" >
+                        
+                        <div class="all-tag">
+                            <ul class="tags ">
+                                <li class="tag-small" style="color:#D0E6A5">2022</li>
+                                <li class="tag-small" style="color: #FFDC84;">2021</li>
+                                <li class="tag-small" style="color: #DB5037;">2020</li>
+                                <li class="tag-small" style="color: #CDABD4;">2019</li>
+                                <li class="tag-small" style="color: #7DBED9;">2018</li>
+                                <li class="tag-small" style="color: #C8B3AA;">2017</li>
+                                <li class="tag-small" style="color: #DB5037;">2016</li>
+                                <li class="tag-small" style="color: #D0E6A5;">2015</li>
+                                <li class="tag-small" style="color: #5FD6CF;">2014</li>
+                                <li class="tag-small" style="color: #5FD6CF;">2013</li>
+                                <li class="tag-small" style="color: #CDABD4;">2012</li>
+                                <li class="tag-small" style="color: #7DBED9;">2011</li>
+                                <li class="tag-small" style="color: #C8B3AA;">2010</li>
+                            </ul>
+            
+                            
+                        </div> 
+                    </div>
+                    <h3 class="title">
+                        Tag
+                    </h3>
+                    <div class="category"  >
+                        
+                       
+                        <div class="all-tag">
+                            <ul class="tags ">
+                                <li class="tag-small" style="color:#D0E6A5">Actions</li>
+                                <li class="tag-small" style="color: #FFDC84;">Actions</li>
+                                <li class="tag-small" style="color: #DB5037;">Actions</li>
+                                <li class="tag-small" style="color: #CDABD4;">Actions</li>
+                                <li class="tag-small" style="color: #7DBED9;">Actions</li>
+                                <li class="tag-small" style="color: #C8B3AA;">Actions</li>
+                                <li class="tag-small" style="color: #DB5037;">Actions</li>
+                                <li class="tag-small" style="color: #D0E6A5;">Actions</li>
+                                <li class="tag-small" style="color: #5FD6CF;">Actions</li>
+                                <li class="tag-small" style="color: #5FD6CF;">Actions</li>
+                            </ul>
+                            <div class="btn ">show more</div>
+                            
+                        </div> 
+                        </div>
+                        <div class="category-mostview ">
+                            <h3 class="title">
+                                Most view
+                            </h3>
+                            <br>
+                            <div class="most-view">
+                                
+                                <div class="tab align">
+                                    <button class="tablinks" onclick="openCity(event, 'list-mv')" id="defaultOpen">Week</button>
+                                    <button class="tablinks" onclick="openCity(event, 'month')">Month</button>
+                                    <button class="tablinks" onclick="openCity(event, 'year')">Year</button>
+                                  </div>
+                                  
+                                  <div id="list-mv" class="tabcontent">
+                                    <div class="list-item flex " style="justify-content: space-between;">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="media/cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="media/cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="media/cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="media/cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="media/cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="media/cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="media/cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                  </div>
+                        
+                                  
+                                  <div id="month" class="tabcontent">
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                </div>
+                                  <div id="year" class="tabcontent">
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>
+                                    <div class="list-item flex align">
+                                        <div class="number align" style="flex-grow: 1;">01</div>
+                                        <div class="film-items flex" style="flex-grow: 7;">
+                                            <img src="cheems.jpg" alt="" width="10%">
+                                            <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                        <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                    </div>`
+                                  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </div>
+
+    
+    <button class="top-btn"> <i class="fa-solid fa-jet-fighter-up"></i></button>
+    
+    
+    
+    <section class="footer" >
+        <div class="logo-slogan-media flex">
+            <div class="logo" style="color:#33A68B" ><img src="https://animebee.to/assets/animebee/images/logo.png" alt=""></div>
+            <div class="slogan" style="margin-left: 10px; color: #000;">
+                join
+                <br>
+                <h3>animebee</h3>
+            </div>
+            <div class="media flex" style="margin: 0px 50px 20px 15px;">
+                <div class="icon-media" style="background-color: #6F85D5;"><i class="fab fa-facebook"></i></div>
+                <div class="icon-media" style="background-color: #6F85D5;"><i class="fab fa-discord"> </i></div>
+                <div class="icon-media" style="background-color: #0188CD;"><i class="fab fa-telegram-plane"></i></div>
+                <div class="icon-media" style="background-color: #FF3C1F;"><i class="fab fa-reddit-alien"></i></i></div>
+
+            </div>
+        </div>
+        <div class="filter-alphabet" style="max-width: 100%;">
+            <h3 class="text">A-Z LIST</h3>
+            <ul class="alphabet flex ">
+                <li class="abc align">All</li>
+                <li class="abc align">A</li>
+                <li class="abc align">B</li>
+                <li class="abc align">C</li>
+                <li class="abc align">D</li>
+                <li class="abc align">E</li>
+                <li class="abc align">G</li>
+                <li class="abc align">H</li>
+                <li class="abc align">I</li>
+                <li class="abc align">K</li>
+                <li class="abc align">M</li>
+                <li class="abc align">P</li>
+                <li class="abc align">Q</li>
+            </ul>
+        </div>
+        <div class="present flex">
+            <div class="text" style="padding: 10px;">Terms of service</div>
+            <div class="text"style="padding: 10px;">DMCA</div>
+            <div class="text" style="padding: 10px;">Contact</div>
+        </div>
+        <div class="copyrighht">
+            <div class="small">AnimeBee does not store any files on our server, we only linked to the media which is hosted on 3rd party services.</div>
+            <div class="small">Copyright © 2021 AnimeBee. All Rights Reserved</div>
+
+        </div>
+    </section>
+    
+    <script src="js/checkuser.js"></script>
+</body>
+</html>

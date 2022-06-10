@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width: 46.1875em) {
+        
+
+        
+        .filter .filter-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center
+        }
+        .btn-filter{
+            display: block;
+        }
+
+        .films{
+            overflow-x: hidden;
+        }
+        .films .content {
+            display: block;
+        }
+        .app-section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .app-section .card2{
+            width: 30%;
+        }
+        .content .content-right{
+            margin-left: 10px;
+            max-width: 100%;
+        }
+        .nav-bar{
+                max-width: 100%;
+            }
+            .media , .search ,.function{
+                display: none;
+            }
+            .logo{
+                margin-left: 30px;
+                
+            }
+           .button{
+               width: 8.5%;
+           }
+        }
+        @media only screen and (min-width: 46.25em) and (max-width: 82.9375em) {
+            .filter .filter-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center
+        }
+        .app-section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .films .content {
+            display: block;
+        }
+        .content .content-right{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .box{
+                display: none;
+            }
+            .search-icon{
+                color: #FEFEFF;
+            }
+            .logo{
+                padding-left: 50px;
+                width: 100%;
+                padding-right: 0px;
+            }
+            .button{
+                width: 5%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar flex align">
+            <div class="humberger-menu "  style="flex-grow: 1.3;">
+                <div id="nav-container">
+                    <div class="bg"></div>
+                    <div class="button" tabindex="0">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </div>
+                    <div id="nav-content" tabindex="0">
+                      <ul>
+                        <li><a href="#0" class="text " style="color: #F5C518;"><span><i class="fa-solid fa-house-chimney"></i></span> Home</a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-solid fa-house-chimney"></i></span> Services</a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-regular fa-film"></i></span> Phim bo</a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-solid fa-house-chimney"></i></i></span> Phim le</a></li>
+                        <li><a href="#0" class="text"><span><i class="fa-solid fa-house-chimney"></i></span> Dien vien</a></li>
+                        <ul class="dicovery"> Kham Pha
+                            <li><a href="#0" class="text" style="color: #F5C518;"><span><i class="fa-solid fa-house-chimney"></i></span> Home</a></li>
+                            <li><a href="#0" class="text" style="color: #F5C518;"><span><i class="fa-solid fa-house-chimney"></i></span> Home</a></li>
+                          </ul>
+                      </ul>
+                      
+                    </div>
+                  </div>
+            </div>
+    
+    
+            <div class="small-bar flex" style="flex-grow: 8;">
+                <div class="logo-search flex" style="flex-grow: 3;">
+                    <div class="logo" style="flex-grow: 5;"><a href="index.html"><img src="https://animebee.to/assets/animebee/images/logo.png" alt=""></a></div>
+                    <form action="/search" class="search flex" style="flex-grow: 7">
+                        <input type="text" class="box" placeholder="Nhap ten phim can tim....">
+                        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </form>
+                </div>
+                <div class="slogan-media " style="flex-grow: 5;">
+                    
+                    <div class="media flex" style="padding-left: 15px;padding-right: 50px;">
+                        <div class="icon-media" style="background-color: #6F85D5;"><i class="fab fa-facebook"></i></div>
+                        <div class="icon-media" style="background-color: #6F85D5;"><i class="fab fa-discord"> </i></div>
+                        <div class="icon-media" style="background-color: #0188CD;"><i class="fab fa-telegram-plane"></i></div>
+                        <div class="icon-media" style="background-color: #FF3C1F;"><i class="fab fa-reddit-alien"></i></i></div>
+    
+                    </div>
+                </div>
+                <div class="function flex" style="flex-grow: 9;">
+                    <div ><i class="fa-solid fa-shuffle random"></i><p class="small ">Random</p></div>
+                    <div ><i class="fa-solid fa-language language"></i><p class="small">Translate</p></div>
+                </div>
+    
+            </div>
+            <div class="login align" style="flex-grow: 0.5;"><a href="login.html">Login</a></div>
+        </div>
+        <div class="share-button ">
+            <h5>Share Anime</h5>
+            <div class="text">to your friends</div>
+        </div>
+    </header>
+    <div class="filter">
+        <ul class="filter-list flex">
+            <li class="filter-item">
+                <div class="text">Loai Phim</div>
+                <select name="tat ca" id=""> 
+                    <option value="Tat ca" class="item">Tat ca</option>
+                    <option value="Tat ca">Phim le</option>
+                    <option value="Tat ca">Phim bo</option>
+                </select>
+            </li>
+            <li class="filter-item">
+                <div class="text">The loai</div>
+                <select name="tat ca" id=""> 
+                    <option value="Tat ca">The loai</option>
+                    <option value="Tat ca">Phim khoa hoc-vien tuong</option>
+                    <option value="Tat ca">Phim kiem hiep</option>
+                    <option value="Tat ca">Phim kinh dij</option>
+                </select>
+            </li>
+            <li class="filter-item">
+                <div class="text">danh gia</div>
+                <select name="tat ca" id=""> 
+                    <option value="Tat ca">5 sao</option>
+                    <option value="Tat ca">4 sao</option>
+                    <option value="Tat ca">3 sao</option>
+                </select>
+            </li>
+            <li class="filter-item">
+                <div class="text">Chat luong</div>
+                <select name="tat ca" id=""> 
+                    <option value="Tat ca">4 K</option>
+                    <option value="Tat ca">4 sao</option>
+                    <option value="Tat ca">3 sao</option>
+                </select>
+            </li>
+            <li class="filter-item">
+                <div class="text">Phat hanh</div>
+                <select name="tat ca" id=""> 
+                    <option value="Tat ca">Tat ca</option>
+                    <option value="Tat ca">4 sao</option>
+                    <option value="Tat ca">3 sao</option>
+                </select>
+            </li>
+            <li class="filter-item">
+                <div class="text">Sap xep</div>
+                <select name="tat ca" id=""> 
+                    <option value="Tat ca">Moi nhat</option>
+                    <option value="Tat ca">4 sao</option>
+                    <option value="Tat ca">3 sao</option>
+                </select>
+            </li>
+            <li class="filter-item">
+                <div class="btn-filter"><a href="#">Duyet</a></div>
+            </li>
+            
+        </ul>
+    </div>
+    <section class="films">
+        <div class="content flex">
+            <div class="content-left "  style="width: 94%;">
+                <div class="new-film" >
+                    
+                    <br>
+                    <div class="app-section flex" style="justify-content: space-around;">
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/d/dc/dc152ceb5ba1474be4a4310cc59f90cb.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/e/e4/e41a915c3f2b1114ec093e7fc3b1442a.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+    
+                <br>
+                <div class="new-film" >
+                    <h3 class="title">Phim mới cập nhật
+                        
+                    </h3>
+                    <br>
+                    <div class="app-section flex" style="justify-content: space-around;">
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="list-media-attr ">
+                                <img src="https://static.bunnycdn.ru/i/cache/images/5/56/56493e2ab496562c128c7e86ceb66b6d.jpg">
+                                <div class="play-btn align"><i class="fa-regular fa-circle-play"></i></div>
+                                <div class="tag flex">
+                                    <div class="hd">HD</div>
+                                    <div class="ep ">EP 12/12</div>
+                                </div>
+                            </div>
+                            <div class="infor">
+                                <div class="name-film">The King of Ten Thousand Domain</div>
+                                <small >ONA . 12min/ep . 2022</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+    
+                
+                
+            </div>
+            <div class="content-right" style="display:inline-block;">
+                <h3 class="title">
+                    Year
+                </h3>
+                <div class="category year" >
+                    
+                    <div class="all-tag">
+                        <ul class="tags ">
+                            <li class="tag-small" style="color:#D0E6A5">2022</li>
+                            <li class="tag-small" style="color: #FFDC84;">2021</li>
+                            <li class="tag-small" style="color: #DB5037;">2020</li>
+                            <li class="tag-small" style="color: #CDABD4;">2019</li>
+                            <li class="tag-small" style="color: #7DBED9;">2018</li>
+                            <li class="tag-small" style="color: #C8B3AA;">2017</li>
+                            <li class="tag-small" style="color: #DB5037;">2016</li>
+                            <li class="tag-small" style="color: #D0E6A5;">2015</li>
+                            <li class="tag-small" style="color: #5FD6CF;">2014</li>
+                            <li class="tag-small" style="color: #5FD6CF;">2013</li>
+                            <li class="tag-small" style="color: #CDABD4;">2012</li>
+                            <li class="tag-small" style="color: #7DBED9;">2011</li>
+                            <li class="tag-small" style="color: #C8B3AA;">2010</li>
+                        </ul>
+        
+                        
+                    </div> 
+                </div>
+                <h3 class="title">
+                    Tag
+                </h3>
+                <div class="category"  >
+                    
+                   
+                    <div class="all-tag">
+                        <ul class="tags ">
+                            <li class="tag-small" style="color:#D0E6A5">Actions</li>
+                            <li class="tag-small" style="color: #FFDC84;">Actions</li>
+                            <li class="tag-small" style="color: #DB5037;">Actions</li>
+                            <li class="tag-small" style="color: #CDABD4;">Actions</li>
+                            <li class="tag-small" style="color: #7DBED9;">Actions</li>
+                            <li class="tag-small" style="color: #C8B3AA;">Actions</li>
+                            <li class="tag-small" style="color: #DB5037;">Actions</li>
+                            <li class="tag-small" style="color: #D0E6A5;">Actions</li>
+                            <li class="tag-small" style="color: #5FD6CF;">Actions</li>
+                            <li class="tag-small" style="color: #5FD6CF;">Actions</li>
+                        </ul>
+                        <div class="btn ">show more</div>
+                        
+                    </div> 
+                    </div>
+                    <div class="category-mostview ">
+                        <h3 class="title">
+                            Most view
+                        </h3>
+                        <br>
+                        <div class="most-view">
+                            
+                            <div class="tab align">
+                                <button class="tablinks" onclick="openCity(event, 'list-mv')" id="defaultOpen">Week</button>
+                                <button class="tablinks" onclick="openCity(event, 'month')">Month</button>
+                                <button class="tablinks" onclick="openCity(event, 'year')">Year</button>
+                              </div>
+                              
+                              <div id="list-mv" class="tabcontent">
+                                <div class="list-item flex " style="justify-content: space-between;">
+                                    <div class="number align" style="flex-grow: 1;">01</div>
+                                    <div class="film-items flex" style="flex-grow: 7;">
+                                        <img src="cheems.jpg" alt="" width="10%">
+                                        <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                    </div>
+                                    <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                </div>
+                                <div class="list-item flex align">
+                                    <div class="number align" style="flex-grow: 1;">01</div>
+                                    <div class="film-items flex" style="flex-grow: 7;">
+                                        <img src="cheems.jpg" alt="" width="10%">
+                                        <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                    </div>
+                                    <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                </div>
+                                <div class="list-item flex align">
+                                    <div class="number align" style="flex-grow: 1;">01</div>
+                                    <div class="film-items flex" style="flex-grow: 7;">
+                                        <img src="cheems.jpg" alt="" width="10%">
+                                        <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                    </div>
+                                    <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                </div>
+                              </div>
+                    
+                              
+                              <div id="month" class="tabcontent">
+                                <div class="list-item flex align">
+                                    <div class="number align" style="flex-grow: 1;">01</div>
+                                    <div class="film-items flex" style="flex-grow: 7;">
+                                        <img src="cheems.jpg" alt="" width="10%">
+                                        <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                    </div>
+                                    <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                </div>
+                                <div class="list-item flex align">
+                                    <div class="number align" style="flex-grow: 1;">01</div>
+                                    <div class="film-items flex" style="flex-grow: 7;">
+                                        <img src="cheems.jpg" alt="" width="10%">
+                                        <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                    </div>
+                                    <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                </div>
+                                <div class="list-item flex align">
+                                    <div class="number align" style="flex-grow: 1;">01</div>
+                                    <div class="film-items flex" style="flex-grow: 7;">
+                                        <img src="cheems.jpg" alt="" width="10%">
+                                        <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                    </div>
+                                    <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                </div>
+                            </div>
+                              <div id="year" class="tabcontent">
+                                <div class="list-item flex align">
+                                    <div class="number align" style="flex-grow: 1;">01</div>
+                                    <div class="film-items flex" style="flex-grow: 7;">
+                                        <img src="cheems.jpg" alt="" width="10%">
+                                        <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                    </div>
+                                    <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                </div>
+                                <div class="list-item flex align">
+                                    <div class="number align" style="flex-grow: 1;">01</div>
+                                    <div class="film-items flex" style="flex-grow: 7;">
+                                        <img src="cheems.jpg" alt="" width="10%">
+                                        <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                    </div>
+                                    <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                </div>
+                                <div class="list-item flex align">
+                                    <div class="number align" style="flex-grow: 1;">01</div>
+                                    <div class="film-items flex" style="flex-grow: 7;">
+                                        <img src="cheems.jpg" alt="" width="10%">
+                                        <div class="name-film">Lorem ipsum dolor sit amet.</div>
+                                    </div>
+                                    <i class="fa-solid fa-plus padding" style="flex-grow: 1;"></i>
+                                </div>`
+                              </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

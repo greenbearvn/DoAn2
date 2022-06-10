@@ -1,0 +1,986 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+  .nav-bar{
+    background-color: #ffff;
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+ .nav-bar{
+   background-color: #ffff;
+ }
+}
+
+
+
+body{
+  
+    background-color: #131215;
+    color:#ffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+  max-width: 1440px;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+.more .text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #dddddd;
+}
+/*-------------------------------phan bo suu tap ----------------------------*/
+.collection{
+    margin-top: 5px;
+}
+
+.text{
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #ffff;
+}
+
+.item{
+    
+    width: 35%;
+    height: 110px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    margin-top: 10px;
+}
+
+.small{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #b5b5be;
+}
+
+.flex{
+    display: flex;
+    
+}
+
+.title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    line-height: 29px;
+    font-weight: 500;
+    color: #ffff;
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+
+.text2{
+    color: #fefefe;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.title::before{
+    content:" ";
+    border-color: #f5c518 ;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 3.5px;
+    margin-right: 25px;
+}
+
+/***************************************************************/
+
+
+
+
+.card2{
+    width: 19%;
+    background-color: #2A2C31;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+
+.list-media-attr > img{
+    width: 100%;
+
+    border-radius: 5px 5px 0px 0px;
+
+    
+    
+}
+.list-media-attr{
+    position: relative;
+}
+
+.content .content-left .app-section .infor{
+  padding: 10px;
+}
+
+.content .content-left .app-section .infor small{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #aaa;
+}
+
+.list-media-attr .play-btn{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  filter: grayscale(1);
+  width: 101%;
+  height: 100%;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 30px;
+  padding-top: 50%;
+}
+
+
+
+.play-btn:hover{
+ 
+  background-color: #202024;
+  opacity: 0.8 ;
+  z-index: 0.5;
+}
+.app-section{
+    flex-wrap: wrap;
+}
+.tag .hd{
+    position: absolute;
+    top:90%;
+    left: 10px;
+    background-color: red;
+    height: 20px;
+    z-index: 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.tag .ep{
+  position: absolute;
+  top:90%;
+  right: 10px;
+  background-color: red;
+  height: 20px;
+  z-index: 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tag div{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #111;
+  padding: 5px;
+  
+}
+
+
+
+/*.list-media-attr:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }*/
+
+.name-film{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+
+    width: 110%;
+}
+
+.name-film:hover{
+    color: #f5c518;
+}
+.content{
+  width: 104%;
+}
+.content-right{
+  width: 500px;
+  padding-left: 10px;
+  margin-right: 15px
+}
+
+/* tags */
+.category{
+    margin-top: 20px;
+    
+  width: 110%;
+  
+    
+}
+
+.all-tag{
+    background-color: #2A2C31;
+    margin: 20px 20px 20px 0px;
+    border-radius: 2px;
+    width: 80%;
+    padding-left: -100px;
+    
+    
+    
+}
+.tags{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 0px;
+    
+   
+}
+.tag-small{
+    width: 30%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+      
+}
+
+.tag-small:hover{
+    background-color: dimgray;
+    border-radius: 5px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    background-color: #3D3E44;
+    margin: 20px;   
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color: #4B4C53;
+}
+
+/* ----------------most view----------*/
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    display: flex;
+    background-color: #3D3E44;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    padding-left: 11%;
+    padding-right: 10%;
+    color: #FFFDDA;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    
+    color: #F5A309;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #50525B;
+    color: #F5A309;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    background-color: #2A2C31;
+    border-top: none;
+  }
+  
+  /* Style the close button */
+  .topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+  }
+  
+  .topright:hover {color: red;}
+
+
+  .number{
+      padding: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 18px;
+    border-left: 6px solid #F5A309;
+    border-radius: 5%;
+     
+      
+  }
+  
+  .list-item{
+      
+      margin-top: 30px;
+      box-shadow: 6px 8px 6px #50525B;
+      
+
+  }
+  .list-item > .film-items > img{
+      border-radius: 5px;
+     
+      
+  }
+
+  .list-item .film-items img{
+    width: 22%;
+  }
+
+  .list-item > .film-items > .name-film{
+      width: 90%;
+      padding: 20px;
+}
+.list-item > .padding{
+    padding: 30px;
+}
+
+.list-item > .padding:hover{
+    color: #f5c518;
+}
+.list-item:hover{
+    background-color: #50525B;
+}
+.most-view{
+  width: 90%;
+}
+/**********************************************************************/
+
+
+/***********************trending*************************/
+
+.trend-items{
+    width: 20%;
+    
+    
+}
+.trend-list{
+    padding: 20px;
+}
+.trend-title{
+    background-image: linear-gradient(
+  50deg,
+  hsl(270deg 100% 7%) 0%,
+  hsl(229deg 48% 15%) 9%,
+  hsl(214deg 51% 20%) 18%,
+  hsl(206deg 49% 26%) 27%,
+  hsl(200deg 43% 32%) 36%,
+  hsl(194deg 35% 38%) 45%,
+  hsl(188deg 27% 46%) 55%,
+  hsl(180deg 22% 54%) 64%,
+  hsl(169deg 25% 64%) 73%,
+  hsl(155deg 29% 74%) 82%,
+  hsl(135deg 39% 85%) 91%,
+  hsl(104deg 100% 95%) 100%
+);
+      
+      
+      
+      
+    width: 90%;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.number-rank{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #faa300;
+    padding-left: 10px;
+    
+}
+
+.trend.name{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 400;
+    padding-left: 20px;
+    
+
+}
+.trend-img{
+    width: 112%;
+}
+/***********************************************************/
+
+
+/*************navbar***********************************/
+.login{
+    background-color: #faa300;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    width: auto;
+    height: 45px;
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+.nav-bar{
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: #202024;
+    padding: 15px 15px 10px 0px;
+    width: 100%;
+}
+
+/*.nav-bar .humberger-menu{
+  display: none;
+}*/
+.logo img{
+    width: 45%;
+    padding-left: 30px;
+    
+}
+
+.search-icon{
+  color: #202024;
+  position: absolute;
+  padding: 9px;
+  margin-left: 250px;
+  
+}
+.search-icon:hover{
+  background-color: #BF7497;
+  border-radius: 5px;
+}
+
+.box{
+  position: relative;
+}
+
+
+
+.icon-media{
+    border-radius: 5px;
+    padding: 12px;
+    line-height: 20px;
+    margin-left: 10px;
+    height: 45px;
+}
+
+.function{
+    padding-top: 5px;
+    width: 28%;
+}
+.function div:nth-child(2){
+  margin-left: 10px;
+}
+.slogan h3{
+    text-transform: capitalize;
+}
+
+.random ,.language {
+    color: #FAA201;
+    padding-left: 10px;
+    width: 20%;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 20px;
+
+}
+
+
+.small-bar .logo-search .search input{
+  height: 40px;
+  color: #111;
+  padding-right: 100px;
+  padding-left: 15px;
+  margin-left: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 3px 3px rgba(0,0,0,.05)!important;
+}
+
+#nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+  }
+  #nav-container .bg {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    background: #000;
+    z-index: 1;
+  }
+  #nav-container:focus-within .bg {
+    visibility: visible;
+    opacity: .6;
+  }
+  #nav-container * {
+    visibility: visible;
+  }
+  
+  .button {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    -webkit-appearance: none;
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    height: 50px;
+    width: 2.5%;
+    cursor: pointer;
+    pointer-events: auto;
+    
+    margin-left: 15px;
+    padding: 0px 12px 15px 5px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  .icon-bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #aaa;
+    transition: .3s;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 5px;
+  }
+  
+  #nav-container:focus-within .button {
+    pointer-events: none;
+  }
+  #nav-container:focus-within .icon-bar:nth-of-type(1) {
+    transform: translate3d(0,8px,0) rotate(45deg);
+  }
+  #nav-container:focus-within .icon-bar:nth-of-type(2) {
+    opacity: 0;
+  }
+  #nav-container:focus-within .icon-bar:nth-of-type(3) {
+    transform: translate3d(0,-8px,0) rotate(-45deg);
+  }
+  
+  #nav-content {
+    margin-top: 55px;
+    padding: 50px 0px 0px 50px;
+    width: 100%;
+    max-width: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 70px);
+    background: #2A2C31;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    transform: translateX(-100%);
+    transition: transform .3s;
+    will-change: transform;
+    contain: paint;
+    z-index: 1;
+    
+  }
+  
+  #nav-content ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #nav-content li a {
+    padding: 10px 5px;
+    display: block;
+    text-transform: uppercase;
+    transition: color .1s;
+  }
+  
+  #nav-content li a:hover {
+    color: #BF7497;
+  }
+  
+  #nav-content li:not(.small) + .small {
+    margin-top: auto;
+  }
+  
+  
+  
+  #nav-container:focus-within #nav-content {
+    transform: none;
+  }
+  #nav-content li span{
+    padding-right: 10px;
+  }
+
+.nav-bar .user{
+  position: relative;
+}
+
+
+.nav-bar .user .user-func{
+  background-color: #3E4048;
+  width: 300px;
+  padding: 15px;
+  border-radius: 15px;
+  position: absolute;
+  display: none;
+}
+.nav-bar .user .user-func .infor{
+  background-color: #4F515B;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+}
+
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  background-color: #23A7FF;
+  padding: 10px 15px 10px 15px;
+  border-radius: 50%;
+}
+
+.dropbtn:hover, .dropbtn:focus-within {
+  background-color: #2980B9;
+  border: 1px solid white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  overflow: auto;
+  
+  z-index: 1;
+  background-color: #3E4048;
+  width: 300px;
+  padding: 15px;
+  border-radius: 15px;
+  position: absolute;
+  display: none;
+  right: 0;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #4F515B;
+  border-radius: 20px;
+
+}
+
+.dropdown a:hover {
+  background-color: #595B66;
+  color: #F5A309;
+}
+
+.show {display: block;}
+/**************************foooter********************/
+.logo-slogan-media{
+  border-bottom: 1px solid red;
+  width: 40%;
+}
+.abc{
+  background-color: #54575A;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 5px;
+  width: 2.5%;
+  max-width: 100%;
+}
+.footer{
+  padding: 20px;
+  background: #136a8a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0px;
+  margin-top: 20px;
+
+}
+
+
+
+
+
+/***** carousel**/
+
+.carousel{
+  max-width: 100%;
+  margin-top: 4em;
+  
+}
+
+.slideshow-container {
+  
+  position: relative;
+  height: 50%;
+  
+  
+}
+
+.carousel .slideshow-container .mySlides img{
+  height: 650px;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  width: auto;
+  padding: 18px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: #2A2B31;
+  border-radius: 10px;
+  right: 0;
+  margin-right: 10px;
+}
+
+/* Position the "next button" to the right */
+.prev{
+  margin-top: 50px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text1 {
+  color: red;
+  font-size: 100px;
+  padding-top: 20%;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: rgb(0,0,0);
+background: linear-gradient(62deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8998949921765581) 9%, rgba(0,0,0,0.9026961126247374) 18%, rgba(0,0,0,0.9307073171065301) 30%, rgba(17,16,16,0.27244401178440125) 66%, rgba(0,0,0,1) 92%);
+  height: 100%;
+  opacity: 0.9;
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 66px;
+  color: #fff;
+  text-align: left;
+}
+
+.slideshow-container .mySlides .film-stats{
+  position: absolute;
+  top: 35%;
+}
+.slideshow-container .mySlides .film-stats h6{
+  font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 3px;
+    padding: 6px 3px 3px 3px;
+    border-radius: 5px;
+    color: #101110;
+}
+
+.slideshow-container .mySlides .film-stats .text9 a{
+  color: #FEFFFE;
+}
+
+.slideshow-container .mySlides  .text8{
+  position: absolute;
+  top: 65%;
+  width: 50%;
+  
+  
+}
+
+.text1, .film-stats ,.text8{
+  padding-left: 2%;
+}
+
+/* Number text (1/3 etc) */
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dotto{
+  position: absolute;
+  top:85%;
+  left: 50%;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+/***************list rank**************/
+
+.list-rank .list-small  h3{
+  background-color: #414248;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #faa300;
+  padding: 20px;
+
+}
+
+
+.list-rank .list-small{
+  background-color: #4A4B51;
+  margin: 10px;
+  margin: 10px;
+  
+}
+
+.list-rank .list-small .rank-item{
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.list-small .more .text{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #dddddd;
+  background-color: #5D5C63
+}
+.list-small .more .text:hover{
+  background-color: #6E6F74;
+}
+.list-rank .list-small .rank-item i:hover{
+  color: #faa300;
+}
+
+.abc:hover{
+  opacity: 0.9;
+}
+
+.card .item:hover{
+  opacity: 0.8;
+}
+
+.top-btn{
+  all: unset; 
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+  transform:scale(1.8);
+  opacity: 0;
+  transition: .3s;
+  background-color: #4A4A50;
+  border-radius: 50%;
+  padding: 0px 5px 5px 5px;
+}
+
+.top-btn:hover{
+  background-color: #faa300;
+}

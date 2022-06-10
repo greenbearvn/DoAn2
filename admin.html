@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        @media only screen and (max-width: 46.1875em) {
+            
+            
+            #tab{
+                display: flex;
+                flex-direction: row;
+                height: 100px;
+                display: none;
+
+            }
+            #tab .tablinks{
+                width: 110%;
+            }
+             .panel-list{
+                 display: flex;
+                 flex-wrap: wrap;
+             }
+             .panel-list .pannel-item{
+                 width: 100%;
+             }
+             .content-right{
+                 margin-top: 100px;
+             }
+             .manage{
+                 display: flex;
+                 flex-direction: column;
+             }  
+             .progress-bar, .task-bar{
+                 width: 100%;
+             }
+             .progress-bar .progress-item .progress{
+                 width: 100%;
+             }
+             .progress *{
+                 width: 100px;
+             }
+             .tabcontent > .flex{
+                 display: flex;
+                 flex-direction: column;
+             }
+             .tabcontent > .flex > .form_film{
+                 width: 100%;
+             }
+             .tabcontent > .flex > .table_data > table{
+                 width: 100%;
+             }
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header flex">
+            <div class="logo"><img src="https://animebee.to/assets/animebee/images/logo.png" alt=""></div>
+            <div class="function flex" style="justify-content: space-around;">
+                <div class="humberger-menu" >
+                    <div class="button" tabindex="0" style="position: relative;">
+                        <i class="fa-solid fa-bars" id="showTab" onclick="hideTab()"></i>
+                        <i class="fa-solid fa-xmark" id="exit" onclick="showTab()" style="position: absolute;top:0;left:0;display: none;"></i>
+                      </div>
+                </div>
+                <div class="item_dropdown flex">
+                    <div class="items-manage" >
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="bagde">1</div>
+                    </div>
+                    <div class="items-manage">
+                        <i class="fa-solid fa-bars-progress"></i>
+                        <div class="bagde">2</div>
+                    </div>
+                    <div class="items-manage">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="bagde">3</div>
+                    </div>
+                    <div class="items-manage">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="bagde">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="page flex" style="height: 100%" >
+        <div class="tab flex_column"  style="width: 15%;" id="tab">
+            <button class="tablinks" onclick="openCity(event, 'Dashboard')" id="defaultOpen"><i class="fa-solid fa-chart-line"></i><span>&ensp;Dashboard</span></button>
+            <button class="tablinks" onclick="openCity(event, 'id')"><i class="fa-solid fa-film"></i><span>&ensp;Film</span></button>
+            <button class="tablinks" onclick="openCity(event, 'comment')"><i class="fa-solid fa-comments"></i><span>&ensp;Comment</span></button>
+            <button class="tablinks" onclick="openCity(event, 'user')"><i class="fa-solid fa-users"></i><span>&ensp;Users</span></button>
+            <button class="tablinks" onclick="openCity(event, 'category')"><i class="fa-solid fa-tags"></i><span>&ensp;Category</span></button>
+            <button class="tablinks" onclick="openCity(event, 'actress')"><i class="fa-solid fa-person-breastfeeding"></i><span>&ensp;Cast</span></button>
+        </div>
+        <div class="content-right" style="width: 85%;"id="xxxx" >
+            <div id="Dashboard" class="tabcontent">
+                <div class="title-x flex" id="welcome">
+                    <h1 class="title-page">Dashboard</h1>
+                </div>
+                <div class="breadcum">
+                    <span><a href="#" style="color: #23527c;">Home</a>   /   </span> <span><a href="#" style="color: #23527c;">Dashboad</a></span> / <span> <a href="#" style="color: grey;">Data</a></span>
+                </div>
+                <div class="panel-list flex" style="flex-wrap: wrap;justify-content: space-between;">
+                    <div class="pannel-item flex" >
+                        <div class="pannel-left">
+                            <h3 class="text">44,023</h3>
+                            <small>DAILY VISITS</small>
+                        </div>
+                        <div class="pannel-right" style="background: #F36B5B;">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="pannel-item flex">
+                        <div class="pannel-left">
+                            <h3 class="text">44,023</h3>
+                            <small>DAILY VISITS</small>
+                        </div>
+                        <div class="pannel-right" style="background: #30A5FF;">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="pannel-item flex">
+                        <div class="pannel-left">
+                            <h3 class="text">44,023</h3>
+                            <small>DAILY VISITS</small>
+                        </div>
+                        <div class="pannel-right" style="background: #1BBC9D;">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="pannel-item flex">
+                        <div class="pannel-left">
+                            <h3 class="text">44,023</h3>
+                            <small>DAILY VISITS</small>
+                        </div>
+                        <div class="pannel-right" style="background: #FBBE29;">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="manage flex">
+                    <div class="progress-bar" style="flex-grow: 1;">
+                        <h4 class="title">Task Panel</h4>
+                        <div class="progress-item flex">
+                            <i class="fa-solid fa-microchip"></i>
+                            <div class="progress">
+                                <div class="bg"></div>
+                                <div class="run"></div>
+                            </div>
+                            <div class="text1">84%</div>
+                        </div>
+                        <div class="progress-item flex">
+                            <i class="fa-solid fa-memory"></i>
+                            <div class="progress">
+                                <div class="bg"></div>
+                                <div class="run"></div>
+                            </div>
+                            <div class="text1">84%</div>
+                        </div>
+                        <div class="progress-item flex">
+                            <i class="fa-solid fa-memory"></i>
+                            <div class="progress">
+                                <div class="bg"></div>
+                                <div class="run"></div>
+                            </div>
+                            <div class="text1">84%</div>
+                        </div>
+                        <div class="progress-item flex">
+                            <i class="fa-solid fa-memory"></i>
+                            <div class="progress">
+                                <div class="bg"></div>
+                                <div class="run"></div>
+                            </div>
+                            <div class="text1">84%</div>
+                        </div>
+                    </div>
+                    <div class="task-bar" style="flex-grow: 3;">
+                        <h4 class="title">Task Panel</h4>
+                        <ul class="task-list">
+                            <li class="task-item flex" style="border: none;">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                            <li class="task-item flex">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                            <li class="task-item flex">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                            <li class="task-item flex">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                            <li class="task-item flex">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                            <li class="task-item flex">
+                                <i class="fa-solid fa-microchip"></i>
+                                <div class="text2">Comment on a post</div>
+                                <div class="time">7 minutes ago</div>
+                            </li>
+                        </ul>
+        
+                    </div>
+                </div>
+            </div>
+            
+            <div id="id" class="tabcontent" style="flex-grow: 7;">
+                <div class="func flex">
+                    <div class="search">
+                        <input type="text" name="" id="">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="add" onclick="XoaFilms()">Xóa toàn bộ</div>
+                </div>
+                                                    
+                
+                <div class=" flex">
+                    <form action=""  class="form_film" >
+                        <h4 style="text-align: center;color: #327AB6;">Quản lý thông tin phim</h4>
+                        <input type="text" name="" id="index" type="hidden" style="display: none;">
+                        <label for="">Tên Phim:</label>
+                        <input type="text" name="" id="udtname" >
+                        <label for="addImg">Ảnh:
+                            <br>
+                            <div class="imgUpload flex" id="imgUpload">
+                                <i class="fa-solid fa-file"> </i>
+                                <div class="text2">Chọn ảnh</div>
+                            </div>
+                        </label>
+                        <input type="file" name="" id="addImg"  style="display: none;visibility:none" onchange="upload(this)" >
+                        <img src="" alt="" id="imgxx" width="40%">
+                        <label for="">Mô tả:</label>
+                        <textarea name="" id="udtdes"  cols="30" rows="10"></textarea>
+                        <label for="">Thể loại:</label>
+                        <select name="" id="udtcat">
+                            
+                        </select>
+                        <label for="">Diễn viên:</label>
+                        <select name="" id="udtcas">
+                            
+                        </select>
+                        <label for="">Năm sản xuất:</label>
+                        <input type="text" name="" id="udtyear">
+                        
+                        <div class="function flex">
+                            <button type="submit" id="add" onclick="Add(items())">Add</button>
+                            <button type="submit" id="update" onclick="updateFilms()" style="display: none;">Update</button>
+                            <button type="submit" >Hủy</button>
+                        </div>
+                    </form>
+                    <div class="table_data" >
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th >Mã Phim</th>
+                                    <th>Tên Phim</th>
+                                    <th>Ảnh Phim</th>
+                                    <th >Thể Loại</th>
+                                    <th>Diễn Viên</th>
+                                    <th>Năm Sản Xuất</th>
+                                    
+                                  </tr>
+                            </thead>
+                            <tbody id="render_data">
+                              
+                            </tbody>
+                            
+                            </div>
+                          </table>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div id="comment" class="tabcontent" style="flex-grow: 7;">
+                <div class="func flex">
+                    <div class="search">
+                        <input type="text" name="" id="">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="add" onclick="XoaComments()">Xóa toàn bộ</div>
+                    
+                </div>
+                <div class=" flex">
+                    <form action=""  class="form_film" >
+                        <h4 style="text-align: center;color: #327AB6;">Quản lý thông tin bình luận</h4>
+                        <input type="text" name="" id="index_comment" type="hidden" style="display: none;">
+                        <label for="">Ten Phim:</label>
+                        <select name="" id="filmName"></select>
+                        <label for="">Tên người đăng tải:</label>
+                        <input type="text" name="" id="publisher" >
+                        <label for="">Nội dung:</label>
+                        <textarea name="" id="content" cols="30" rows="10"></textarea>
+    
+                        <div class="function flex">
+                            <button type="submit" id="add_comment" onclick="addComment(comment())">Add</button>
+                            <button type="submit" id="update_comment" onclick="updateComment()" style="display: none;">Update</button>
+                            <button type="submit" >Hủy</button>
+                        </div>
+                    </form>
+                    <div class="table_data" >
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Mã bình luận</th>
+                                    <th>Tên phim</th>
+                                    <th>Tên người đăng</th>
+                                    <th>Nội dung</th>
+                                    <th>Thời gian</th>
+                                  </tr>
+                            </thead>
+                            <tbody id="render_data_comment">
+                              
+                            </tbody>
+                            
+                            </div>
+                          </table>
+                    </div>
+                </div>
+            </div>
+            <div id="user" class="tabcontent" style="flex-grow: 7;">
+                <div class="func flex">
+                    <div class="search">
+                        <input type="text" name="" id="">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="add" onclick="XoaUsers()">Xóa toàn bộ</div>
+                </div>
+                <div class=" flex">
+                    <form action=""  class="form_film" >
+                        <h4 style="text-align: center;color: #327AB6;">Quản lý thông tin người dùng</h4>
+                        <input type="text" name="" id="index_user" type="hidden" style="display: none;">
+                        <label for="">Email:</label>
+                        <input type="text" name="" id="email" >
+                        <label for="">Tên người dùng:</label>
+                        <input type="text" name="" id="username" >
+                        <label for="">Mật khẩu:</label>
+                        <input type="password" name="" id="password" >
+                        <label for="">Vai trò:</label>
+                        <select name="" id="role">
+                            <option value="Admin">Admin</option>
+                            <option value="User">User</option>
+                        </select>
+    
+                        <div class="function flex">
+                            <button type="submit" id="add_user" onclick="AddUser(user())">Add</button>
+                            <button type="submit" id="update_user" onclick="updateUser()" style="display: none;">Update</button>
+                            <button type="submit" >Hủy</button>
+                        </div>
+                    </form>
+                    <div class="table_data" >
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Mã người dùng</th>
+                                    <th>Email</th>
+                                    <th>Tên người dùng</th>
+                                    <th>Vai trò</th>
+                                  </tr>
+                            </thead>
+                            <tbody id="render_data_user">
+                              
+                            </tbody>
+                            
+                            </div>
+                          </table>
+                    </div>
+            
+            </div>
+            
+            
+        </div>
+        <div id="category" class="tabcontent" style="flex-grow: 7;">
+            <div class="func flex">
+                <div class="search">
+                    <input type="text" name="" id="">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="add" onclick="XoaCats()">Xóa toàn bộ</div>
+            </div>
+            <div class=" flex">
+                <form action=""  class="form_film" >
+                    <h4 style="text-align: center;color: #327AB6;">Quản lý thông tin thể loại</h4>
+                    <input type="text" name="" id="index_cat" type="hidden" style="display: none;">
+                    <label for="">Tên thể loại:</label>
+                    <input type="text" name="" id="catname" >
+                    <label for="">Mô tả:</label>
+                    <textarea name="" id="catdes"  cols="30" rows="10"></textarea>
+
+                    <div class="function flex">
+                        <button type="submit" id="add_cat" onclick="AddCat(category())">Add</button>
+                        <button type="submit" id="update_cat" onclick="updateCat()" style="display: none;">Update</button>
+                        <button type="submit" >Hủy</button>
+                    </div>
+                </form>
+                <div class="table_data" >
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mã Thể loại</th>
+                                <th>Tên Thể Loại</th>
+                                <th>Mô Tả Thể Loại</th>
+                              </tr>
+                        </thead>
+                        <tbody id="render_data_cat">
+                          
+                        </tbody>
+                        
+                        </div>
+                      </table>
+                </div>
+                
+            </div>
+        </div>
+        <div id="actress" class="tabcontent" style="flex-grow: 7;">
+            <div class="func flex">
+                <div class="search">
+                    <input type="text" name="" id="">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="add" onclick="XoaFilms()">Xóa toàn bộ</div>
+            </div>
+            <div class=" flex">
+                <form action=""  class="form_film" >
+                    <h4 style="text-align: center;color: #327AB6;">Quản lý thông tin diễn viên</h4>
+                    <input type="text" name="" id="index_cas" type="hidden" style="display: none;">
+                    <label for="">Tên diễn viên:</label>
+                    <input type="text" name="" id="casname" >
+                    <label for="">Mô tả:</label>
+                    <textarea name="" id="casdes"  cols="30" rows="10"></textarea>
+                    <label for="">Năm sinh:</label>
+                    <input type="text" name="" id="yearBorn" >
+                    <label for="">Nơi sinh:</label>
+                    <input type="text" name="" id="country" >
+
+                    <div class="function flex">
+                        <button type="submit" id="add_cas" onclick="AddCas(cast())">Add</button>
+                        <button type="submit" id="update_cas" onclick="updateCas()" style="display: none;">Update</button>
+                        <button type="submit" >Hủy</button>
+                    </div>
+                </form>
+                <div class="table_data" >
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mã diễn viên</th>
+                                <th>Tên diễn viên</th>
+                                <th>Mô Tả </th>
+                                <th>Năm sinh</th>
+                                <th>Nơi sinh</th>
+                              </tr>
+                        </thead>
+                        <tbody id="render_data_cas">
+                          
+                        </tbody>
+                        
+                        </div>
+                      </table>
+                </div>
+                
+            </div>
+    </section>
+    <script>
+        
+
+        ///////////////////
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        
+        
+        
+        
+        
+
+
+            //////////////////
+         
+
+            
+
+      
+    </script>
+    <script src="js/admin.js"></script>
+    <script src="js/qlphim.js"></script>
+    <script src="js/qltheloai.js"></script>
+    <script src="js/qluser.js"></script>
+    <script src="js/qlcomment.js"></script>
+    <script src="js/qlcast.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
